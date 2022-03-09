@@ -1,0 +1,50 @@
+{
+  "containerOverrides": [
+    {
+      "name": "plan-advantage-batch-emails-task-qa",
+      "environment": [
+        {
+          "name": "EMAIL_PROCESSES_NAME",
+          "value": "quarterlyPlanReviewEmailService"
+        },
+        {
+          "name": "QUARTER",
+          "value": "1"
+        },
+        {
+          "name": "YEAR",
+          "value": "2020"
+        },
+        {
+          "name": "DAYS",
+          "value": "14"
+        },
+        {
+          "name": "EMAIL_PROCESSES_BROKER_DEALER_NAME",
+          "value": "UBS"
+        },
+        {
+          "name": "IS_REMINDER_EMAIL",
+          "value": "false"
+        },
+        {
+          "name": "CURRENT_DATE_OVERRIDE",
+          "value": ""
+        },
+        {
+          "name": "PROCESS",
+          "value": "scheduleQuarterlyPlanReviewEmail"
+        },
+        {
+          "name": "QUARTER_END_WINDOW_END_DATE_OVERRIDE",
+          "value": "true"
+        },
+        {
+          "name": "QUARTER_END_WINDOW_END_DATE",
+          "value": "2020-04-30"
+        }
+      ]
+    }
+  ]
+}
+

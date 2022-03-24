@@ -15,7 +15,7 @@ public class TestNgMavenSecondClass {
 
     @Test(priority = 2, description = "checking checkingList")
     public void checkingList() {
-        System.out.println(SomeExamples.check());
+        System.out.println("La respuesta es: " + SomeExamples.check());
         Assert.assertTrue(SomeExamples.check());
     }
 }

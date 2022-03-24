@@ -6,7 +6,7 @@ public class MyHashMap {
     public static void main(String[] args) {
         MetodosHashMap familia = new MetodosHashMap();
 
-        HashMap<String, Integer> calzado = new HashMap<String, Integer>();
+        HashMap<String, Integer> calzado = new HashMap<>();
         calzado.put("Liliana", 36);
         calzado.put("Daniel", 41);
         calzado.put("Andres", 40);

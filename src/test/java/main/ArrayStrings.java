@@ -12,7 +12,7 @@ public class ArrayStrings {
         Date now = new Date();
         System.out.println("***" + now);
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
-        System.out.println(conmigo("Andres estuvo en la casa el dia: " + now));
+        System.out.println(getNombre("Andres") + " Estuvo en la cas el dia " + now);
 
         String Date = formatter.format(now);
 
@@ -34,7 +34,7 @@ public class ArrayStrings {
         holaaaa.isIncludeInContactFile();
     }
 
-    public static String conmigo(String name) {
+    public static String getNombre(String name) {
         return name;
     }
 

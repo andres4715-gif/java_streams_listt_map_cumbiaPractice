@@ -18,7 +18,7 @@ public class MainEletrodomesticos {
         for(Eletrodomesticos myValue: myList) {
             total = total + myValue.getPrice();
         }
-        System.out.println("El valor de los electrodomesticos es: " + total);
 
+        System.out.println("El valor de los electrodomesticos es: " + total);
     }
 }

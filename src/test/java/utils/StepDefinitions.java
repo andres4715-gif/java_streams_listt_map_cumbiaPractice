@@ -17,7 +17,6 @@ public class StepDefinitions {
     }
 
 
-
     public static String colorAutifonos(String color) {
         System.out.println("Los aufifonos son: " + color);
         return color;
@@ -263,19 +262,14 @@ public class StepDefinitions {
         return false;
     }
 
-    public static boolean checkingAfterNumeros(List<Integer> reduciendo2, boolean check, int add3) {
+    public static boolean checkingAfterNumeros(List<Integer> reduciendo, boolean check, int add3) {
         List<Integer> adding = new ArrayList<>();
-        for (Integer hola : reduciendo2) {
-            if (reduciendo2.size() < 10) {
+        for (Integer hola : reduciendo) {
+            if (reduciendo.size() < 10) {
                 adding.add(add3);
                 System.out.println(hola);
             }
         }
-
         return adding.size() > 2;
     }
 }
-
-
-
-

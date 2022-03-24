@@ -55,7 +55,6 @@ public class ListaCarros {
         }
 
         ArrayList<String> personas = new ArrayList<String>();
-
         personas.add("Andres");
         personas.add("Camilo");
         personas.add("Liliana");

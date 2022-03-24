@@ -41,33 +41,32 @@ public class PruebaConListas {
 
         System.out.println("El primer pasajero es: " + myPasajeros.get(0).getNombre() + " En el carro de placas " + myCarro.getPlaca());
 
-        List<Persona> nini = new ArrayList<Persona>();
-
-        nini.add(new Persona("Fiona", 787, 1.20, 'F'));
-        nini.add(new Persona("Maravilla", 1000, 1.80, 'F'));
-        nini.add(new Persona("Thor", 4000, 1.90, 'M'));
-        nini.add(new Persona("Iroman", 45, 1.80, 'M'));
+        List<Persona> personajes = new ArrayList<Persona>();
+        personajes.add(new Persona("Fiona", 787, 1.20, 'F'));
+        personajes.add(new Persona("Maravilla", 1000, 1.80, 'F'));
+        personajes.add(new Persona("Thor", 4000, 1.90, 'M'));
+        personajes.add(new Persona("Iroman", 45, 1.80, 'M'));
 
         System.out.println("Debe pagar impuestos: " + myCarro.cobrarImpuestos());
         System.out.println("La lista de pasageros es: " + myPasajeros.size());
         System.out.println("La nueva lista tiene " + arrlist2.size() + " posiciones");
         System.out.println(arrlist2.get(0).getNombre());
-        System.out.println(nini.get(1).getNombre());
+        System.out.println(personajes.get(1).getNombre());
 
         System.out.println("Recorriendo con un ciclo for: ");
-        for (Persona holasss : nini) {
+        for (Persona holasss : personajes) {
             System.out.println(holasss.getNombre() + " - " + holasss.tomarDato());
         }
 
         System.out.println("Recorriendo con un Iterador: ");
-        Iterator iter = nini.iterator();
+        Iterator iter = personajes.iterator();
         while (iter.hasNext()) {
             Persona persona = (Persona) iter.next();
             System.out.println(persona.getNombre() + " - " + persona.tomarDato());
         }
 
         System.out.println("Obteniendo solo los nombres de la lista con el metodo Iterador:");
-        Iterator myIterador = nini.iterator();
+        Iterator myIterador = personajes.iterator();
         while (myIterador.hasNext()) {
             Persona persona = (Persona) myIterador.next();
             System.out.println(persona.getNombre());

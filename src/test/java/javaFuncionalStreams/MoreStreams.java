@@ -12,8 +12,8 @@ public class MoreStreams {
 
     @Test
     public void whenMapIdToEmployees_thenGetEmployeeStream() {
-        Integer[] empId = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 0};
         List<Integer> numeros = new ArrayList<Integer>();
+        Integer[] empId = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 0};
         for (int x : empId) {
             if (x > 5) {
                 numeros.add(x);
@@ -25,6 +25,8 @@ public class MoreStreams {
                 .stream()
                 .filter(x -> x > 8)
                 .collect(Collectors.toList());
+
+        System.out.println(reduciendo.getClass().getSimpleName());
 
         Assert.assertTrue(StepDefinitions.checkingAfterNumeros(reduciendo, true, 1));
     }

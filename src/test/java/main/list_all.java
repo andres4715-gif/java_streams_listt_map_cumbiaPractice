@@ -8,23 +8,23 @@ public class list_all {
     public static void main(String[] args) {
 
         // Initializing a list of type arraylist
-        List<String> l = new ArrayList<String>();
-        l.add("10");
-        l.add("67");
-        l.add("98");
-        System.out.println(l);
+        List<String> disponibilidad = new ArrayList<String>();
+        disponibilidad.add("10");
+        disponibilidad.add("67");
+        disponibilidad.add("98");
+        System.out.println(disponibilidad);
 
         // Initializing a collection to be appended to list
-        ArrayList<String> arr = new ArrayList<String>();
-        arr.add("100");
-        arr.add("200");
-        arr.add("300");
-        System.out.println(arr);
+        ArrayList<String> precio = new ArrayList<String>();
+        precio.add("100");
+        precio.add("200");
+        precio.add("300");
+        System.out.println(precio);
 
-        arr.addAll(l);
+        precio.addAll(disponibilidad);
 
-        List<String> newCompleteList = new ArrayList<String>(arr);
+        List<String> newCompleteList = new ArrayList<String>(precio);
 
-        System.out.println(newCompleteList);
+        System.out.println("La nueva lista es: " + newCompleteList);
     }
 }

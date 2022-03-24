@@ -28,5 +28,6 @@ public class MainReturningBoolean {
         Assert.assertFalse(ReturningBoolean.isFsTestPlanProduction("6768", "UBS"));
         Assert.assertTrue(ReturningBoolean.isFsTestPlanProduction("6769", "UBS"));
         Assert.assertEquals(6, ReturningBoolean.checkIfExistsInDb.size());
+        System.out.println(ReturningBoolean.checkIfExistsInDb.keySet().contains(ReturningBoolean.checkIfExistsInDb.get(0)));
     }
 }

@@ -11,6 +11,7 @@ public class JavaFuncionalStreams {
 
     @Test(priority = 1, enabled = true, description = "Checking Streams")
     public void checkingList() {
+
         List<Plans> misPlanes = new ArrayList<>();
 
         misPlanes.add(new Plans("A", "F"));
